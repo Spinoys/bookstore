@@ -17,3 +17,12 @@ if (!$conn) {
 
 $sql = "INSERT INTO Leverans (isbn, titel, author, fprice, deliverydate, numberdelivered)
 VALUES ('12345', 'Book Titel', 'Författare', '100', 'datum', '5')";
+
+if (mysqli_query($con, $sql)) {
+  echo "Ny bok har lagts till";
+} else {
+  echo "Woops Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+}
