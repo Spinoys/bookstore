@@ -8,3 +8,37 @@ Theo
 Anna
 Ömur
 Magnus
+
+
+	Bokhandeln.
+
+En bokhandel behöver ett nytt system för att hålla ordning på sin försäljning.
+
+En boktitel identifieras av ett ISBN-nummer (som är unikt per titel)..  Boken har även en titel och en författare.
+
+Böcker har ett s.k. F-pris (priset man köper in dem från förlaget med) och ett försäljningspris. (På försäljningspriset tillkommer dessutom 6% moms.)
+
+Bokhandeln använder inget lager - böcker placeras ut direkt på hyllorna.
+
+Man vill kunna göra följande:
+
+När man tar emot böcker för varje inleverans kunna ange isbn, F-pris, datum för leverans, och hur många ex av en bok som levererats till bokhandeln, samt därefter vilket hylla man placerat boken på (t.ex. H4).
+
+-     Att boken automatiskt ska få ett försäljningspris som är 1,8 x F-pris.
+      Men att detta går att ändra manuellt om man vill.
+
+-     När man säljer böcker kunna söka fram en bok på ISBN och ange 
+       hur många ex man har sålt, samt datum för försäljning.
+
+Få ut rapporter över hur mycket man tjänat på olika titlar, t.ex. per månad, vecka eller år.
+
+-     Ha ett användargränssnitt riktat mot kunder där du kan söka fram en 
+      bok på ISBN, titel eller författare och där priset alltid visas som 
+      försäljningspris med moms. Även kunden ska kunna se hur många ex 
+       som finns inne just nu.
+
+Bokhandeln kontaktar ert utvecklingsteam för att få en prototyp framtagen. De undrar hur de olika gränssnitten ovan skulle kunna se ut.
+
+Prata med kunden.
+Skissa på ett gränssnitt med papper och penna. 
+Ta därefter ett förnyat samtal med kunden.
