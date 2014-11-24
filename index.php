@@ -2,10 +2,10 @@
 <?php
 
 //Adding local database info
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "ourDB";
+$servername = 127.0.0.1;
+$username = "root";
+$password = "mysql";
+$dbname = "Bookstore";
 
 //Create connection
 $con = mysqli_connect($servername, $username, $password, $dbname);
@@ -15,8 +15,7 @@ if (!$conn) {
   die("Woops, the connection to the database failed: " .mysqli_connect_error());
 }
 
-$sql = "INSERT INTO Leverans (isbn, titel, author, fprice, deliverydate, numberdelivered)
-VALUES ('12345', 'Book Titel', 'Författare', '100', 'datum', '5')";
+$sql = "INSERT INTO purchased (isbn, purchase_price, delivered_quantity, delivery_date, bookcase) VALUES ('12345', 'Book Titel', 'Författare', '100', 'datum', '5')";
 
 if (mysqli_query($con, $sql)) {
   echo "Ny bok har lagts till";
