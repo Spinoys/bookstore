@@ -20,23 +20,23 @@
     </header>
 
     <main>
-        <p>Hello world im ready to rock!</p>
+        <h3>Inleveransformulär</h3>
         <form class="deliveries">
 
             <label for="isbn">ISBN:</label>
-            <input type="text" name="isbn"> 
+            <input type="text" name="isbn" placeholder="Skriv in bokens ISBN-nummer" autofocus required> 
 
             <label for="fpris">F-pris:</label>
-            <input type="text" name="fpris">
+            <input type="text" name="fpris" placeholder="Skriv in bokens Förlags-pris" required>
 
             <label for="date">Inleveransdatum:</label>
-            <input type="text" name="date">
+            <input type="text" name="date" placeholder="Skriv in Inleverans-datum" required>
 
             <label for="quantity">Antal:</label>
-            <input type="text" name="quantity">
+            <input type="text" name="quantity" placeholder="Skriv in antal" required>
 
             <label for="shelf">Hylla:</label>
-            <input type="text" name="shelf">
+            <input type="text" name="shelf" placeholder="Skriv in hyll-placering" required>
 
             <input type="submit" value="Submit">
         </form>
