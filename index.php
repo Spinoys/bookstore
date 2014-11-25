@@ -14,6 +14,7 @@
 <body>
     <!-- App starts-->
     <header>
+        <p>HeaderInfo</p>
         <nav>
 
         </nav>
@@ -45,7 +46,7 @@
     </main>
 
     <footer>
-
+        <p>FooterInfo</p>
     </footer>
     <!-- App ends-->
 
