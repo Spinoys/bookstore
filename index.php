@@ -21,7 +21,25 @@
 
     <main>
         <p>Hello world im ready to rock!</p>
+        <form class="deliveries">
 
+            <label for="isbn">isbn:</label>
+            <input type="text" name="isbn"> 
+
+            <label for="fpris">F-pris:</label>
+            <input type="text" name="fpris">
+
+            <label for="date">Inleveransdatum:</label>
+            <input type="text" name="date">
+
+            <label for="quantity">Antal:</label>
+            <input type="text" name="quantity">
+
+            <label for="shelf">Hylla:</label>
+            <input type="text" name="shelf">
+
+            <input type="submit" value="Submit">
+        </form>
 
 
     </main>
@@ -69,3 +87,4 @@ if (mysqli_query($con, $sql)) {
 mysqli_close($conn);
 }
 ?>
+
