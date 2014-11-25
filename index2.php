@@ -25,10 +25,10 @@
         <form class="deliveries">
 
             <label for="isbn">ISBN:</label>
-            <input type="text" name="isbn" placeholder="Skriv in bokens ISBN-nummer" autofocus required> 
+            <input type="text" name="isbn" placeholder="Skriv in ISBN-nummer" autofocus required> 
 
             <label for="fpris">F-pris:</label>
-            <input type="text" name="fpris" placeholder="Skriv in bokens Förlags-pris" required>
+            <input type="text" name="fpris" placeholder="Skriv in Förlags-pris" required>
 
             <label for="date">Inleveransdatum:</label>
             <input type="text" name="date" placeholder="Skriv in Inleverans-datum" required>
