@@ -15,7 +15,7 @@ if (!$conn) {
   die("Woops, the connection to the database failed: " .mysqli_connect_error());
 }
 
-$sql = "INSERT INTO purchased (isbn, purchase_price, delivered_quantity, delivery_date, bookcase) VALUES ('12345', 'Book Titel', 'Författare', '100', 'datum', '5')";
+$sql = "INSERT INTO purchased (isbn, purchase_price, delivered_quantity, delivery_date, bookcase) VALUES ('9100451924', '100', '50', '2014-11-24', 'H4)";
 
 if (mysqli_query($con, $sql)) {
   echo "Ny bok har lagts till";
