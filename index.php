@@ -23,7 +23,7 @@
         <p>Hello world im ready to rock!</p>
         <form class="deliveries">
 
-            <label for="isbn">isbn:</label>
+            <label for="isbn">ISBN:</label>
             <input type="text" name="isbn"> 
 
             <label for="fpris">F-pris:</label>
