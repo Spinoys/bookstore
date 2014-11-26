@@ -30,12 +30,36 @@ footer {
   padding:20px;
 }
 
-.deliveries {
+#deliveries {
   width: 100%;
   margin: 25px;
   display: inline-block;
 }
 
-.deliveries input {
+input {
+  margin-top: 5px;
   margin-right: 8px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+form div {
+  float: left;
+}
+
+form button {
+  margin-top: 5px;
+}
+
+.on-error {
+  display:none;
+  color:#900;
+  background-color:#FAFFBD;
+}
+
+span {
+  display: block;
+  margin: 5px;
+  padding: 2px;
+  width: 480px;
 }
