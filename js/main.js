@@ -44,6 +44,8 @@ $(function(){
       form.find('#isbn').val('');
     }
     console.log(isbn, isbnOK);
+
+    // Not working to temporarily turned off
 /*
     /*fprice validation
     ************************************************
