@@ -1,4 +1,6 @@
+// This was only for testing purposes
 
+<!-- <html>
 <?php
 //Firing up PHP
 
@@ -27,3 +29,4 @@ if (mysqli_query($con, $sql)) {
 mysqli_close($conn);
 }
 ?>
+</html> -->

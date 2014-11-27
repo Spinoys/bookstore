@@ -68,10 +68,10 @@ if (!mysql_query($sql,$con))
 
   // If Success
   // Lets user know
-  echo "<h2>En ny bok tillagd till registret</h2><br>";
+  echo "<h2>En ny bok tillagd till registret</h2><br/>";
 
   // Give option to add new book
-  echo "<a href='leverans.php'>För in en ny bok</a><br>";
+  echo "<a href='leverans.php'>För in en ny bok</a><br/>";
 
   //Or Return to Main Page
   echo "<a href='index.php'>Tillbaka till Framsidan</a>";
