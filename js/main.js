@@ -67,7 +67,7 @@ $(function(){
       form.find('#fprice').val('');
     }
     console.log(fprice, fpriceOK);
-*/
+
 
     // Do not reload the page
     return false;
