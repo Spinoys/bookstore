@@ -18,42 +18,18 @@
 <body>
     <!-- App starts-->
     <header>
-        <p>HeaderInfo</p>
         <nav>
-
+        <ul>    
+            <li><a href="index.php">Start</a></li>
+            <li><a href="index2.php">Inleverans</a></li>  
+            <li><a href="index.php">Försäljning</a></li>
+            <li><a href="index.php">Rapporter</a></li>
+        </ul>
         </nav>
     </header>
 
     <main>
-        <h3>Inleveransformulär</h3>
-        <form id="deliveries">
-
-            <div>
-            <label for="isbn">ISBN:</label>
-            <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" autofocus maxlength=13> 
-            </div>
-            <div>
-            <label for="fprice">F-pris:</label>
-            <input id="fprice" name="fprice" type="text" placeholder="Skriv in Förlags-pris">
-            </div>
-            <div>
-            <label for="date">Datum:</label>
-            <input id="date" name="date" type="text" placeholder="Skriv in Inleverans-datum">
-            </div>
-            <div>
-            <label for="quantity">Antal:</label>
-            <input id="quantity" name="quantity" type="text" placeholder="Skriv in antal">
-            </div>
-            <div>
-            <label for="shelf">Hylla:</label>
-            <input id="shelf" name="shelf" type="text" placeholder="Skriv in hyll-placering">
-            </div>
-            <div class="button">
-            <button type="submit">Skicka!</button>
-            </div>
-            <div><span class="on-error isbn">ISBN: Snälla mata in ett 13-siffrigt ISBN-nummer med bara siffror!</span>
-            <span class="on-error fprice">F-pris: Snälla mata in ett pris, enbart siffror!</span></div>
-        </form>
+    <h3>Startsidan</h3>
 
 
     </main>
@@ -68,33 +44,4 @@
 
 </html>
 
-
-<?php
-//Firing up PHP
-
-//Adding local database info
-$servername = 127.0.0.1;
-$username = "root";
-$password = "mysql";
-$dbname = "Bookstore";
-
-//Create connection
-$con = mysqli_connect($servername, $username, $password, $dbname);
-
-//Check connection and return error message if connection fails
-if (!$conn) {
-  die("Woops, the connection to the database failed: " .mysqli_connect_error());
-}
-
-$sql = "INSERT INTO purchased (isbn, purchase_price, delivered_quantity, delivery_date, bookcase) VALUES ('9100451924', '100', '50', '2014-11-24', 'H4)";
-
-if (mysqli_query($con, $sql)) {
-  echo "Ny bok har lagts till";
-} else {
-  echo "Woops Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-
-mysqli_close($conn);
-}
-?>
 
