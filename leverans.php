@@ -19,12 +19,7 @@
     <!-- App starts-->
     <header>
         <nav>
-        <ul>    
-            <li><a href="index.php">Start</a></li>
-            <li><a href="leverans.php">Inleverans</a></li>  
-            <li><a href="index.php">Försäljning</a></li>
-            <li><a href="index.php">Rapporter</a></li>
-        </ul>
+            <?php include 'include/nav.html.php'; ?>
         </nav>
     </header>
 
@@ -34,7 +29,7 @@
 
             <div>
             <label for="isbn">ISBN:</label>
-            <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" autofocus maxlength=13 required> 
+            <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required> 
             </div>
             <div>
             <label for="fprice">F-pris:</label>
