@@ -11,10 +11,14 @@ main {
 }
 
 header {
+  position: fixed;
+  top:0px;
+  width: 100%;
   background-color:#EEE8CD;
   border-bottom:1px solid #333;
   color:#B8860B;
-  padding:20px;
+  padding:0px;
+  height: 50px;
 }
 
 h3 {
@@ -31,7 +35,7 @@ footer {
 }
 
 #deliveries {
-  width: 100%;
+  
   margin: 25px;
   display: inline-block;
 }
@@ -62,4 +66,57 @@ span {
   margin: 5px;
   padding: 2px;
   width: 480px;
+}
+
+/* ****************************Navigation******************************* */
+
+
+header nav {
+  position:fixed;
+  top: 10px;
+  width:100%;
+  font-size: 105%;
+  text-align: center;
+  padding-left: 15vw;
+  height: 30px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  opacity:.98;
+}
+
+header nav > ul {
+  position: absolute;
+}
+
+header nav ul li {
+  position:relative;
+  height:30px; 
+}
+header nav > ul > li {
+  float:left;
+}
+
+header nav > ul li a {
+  padding-top:6px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+header nav > ul > li > a {
+  /*height:16px;*/
+  border-right:0px solid rgb(255, 163, 0);
+} 
+
+
+header nav a {
+  display:block;
+  padding: 0 8px 8px;  
+  text-decoration:none;
+  color:#3b3b3b;
+}
+
+header nav a:hover {
+  background-color:#000;
+  color: #fff;
+  overflow: hidden;
 }
