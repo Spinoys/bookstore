@@ -14,7 +14,8 @@ Magnus
 
 En bokhandel behöver ett nytt system för att hålla ordning på sin försäljning.
 
-En boktitel identifieras av ett ISBN-nummer (som är unikt per titel)..  Boken har även en titel och en författare.
+En boktitel identifieras av ett ISBN-nummer (som är unikt per titel).
+Boken har även en titel och en författare.
 
 Böcker har ett s.k. F-pris (priset man köper in dem från förlaget med) och ett försäljningspris. (På försäljningspriset tillkommer dessutom 6% moms.)
 
@@ -27,20 +28,20 @@ När man tar emot böcker för varje inleverans kunna ange isbn, F-pris, datum f
 -     Att boken automatiskt ska få ett försäljningspris som är 1,8 x F-pris.
       Men att detta går att ändra manuellt om man vill.
 
--     När man säljer böcker kunna söka fram en bok på ISBN och ange 
+-     När man säljer böcker kunna söka fram en bok på ISBN och ange
        hur många ex man har sålt, samt datum för försäljning.
 
 Få ut rapporter över hur mycket man tjänat på olika titlar, t.ex. per månad, vecka eller år.
 
--     Ha ett användargränssnitt riktat mot kunder där du kan söka fram en 
-      bok på ISBN, titel eller författare och där priset alltid visas som 
-      försäljningspris med moms. Även kunden ska kunna se hur många ex 
+-     Ha ett användargränssnitt riktat mot kunder där du kan söka fram en
+      bok på ISBN, titel eller författare och där priset alltid visas som
+      försäljningspris med moms. Även kunden ska kunna se hur många ex
        som finns inne just nu.
 
 Bokhandeln kontaktar ert utvecklingsteam för att få en prototyp framtagen. De undrar hur de olika gränssnitten ovan skulle kunna se ut.
 
 Prata med kunden.
-Skissa på ett gränssnitt med papper och penna. 
+Skissa på ett gränssnitt med papper och penna.
 Ta därefter ett förnyat samtal med kunden.
 
 
