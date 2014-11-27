@@ -18,9 +18,13 @@
 <body>
     <!-- App starts-->
     <header>
-    <p>HeaderInfo</p>
         <nav>
-
+        <ul>    
+            <li><a href="index.php">Start</a></li>
+            <li><a href="leverans.php">Inleverans</a></li>  
+            <li><a href="index.php">Försäljning</a></li>
+            <li><a href="index.php">Rapporter</a></li>
+        </ul>
         </nav>
     </header>
 
@@ -54,6 +58,7 @@
             <div><span class="on-error isbn">ISBN: Snälla mata in ett 13-siffrigt ISBN-nummer med bara siffror!</span>
             <span class="on-error fprice">F-pris: Snälla mata in ett pris, enbart siffror!</span></div>
         </form>
+
 
 
     </main>
