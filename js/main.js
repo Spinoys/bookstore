@@ -17,22 +17,22 @@ $(function(){
     */
     // Read the value from the isbn input field
     var isbn = form.find('#isbn').val();
-    
-    
+
+
     // First remove all hyphens
     isbn = isbn.replace(/-/g,'');
-    
-    // Always add 978 to the isbn if shorter 
+
+    // Always add 978 to the isbn if shorter
     // than 13 characters
     if(isbn.length < 13){
       isbn = "978" + isbn;
     }
 
 
-    // Check/validate the ISBN 
+    // Check/validate the ISBN
     var isbnOK = true;
 
-    // Check if the isbn has the length of 13 characters 
+    // Check if the isbn has the length of 13 characters
     //and that it is only numbers
     isbnOK = isbn.length == 13 && !isNaN(isbn/1);
 
@@ -40,19 +40,19 @@ $(function(){
     if(!isbnOK){
       // Show the user info about incorrect format
       $('.on-error.isbn').show();
-      // Empty the isbn field 
+      // Empty the isbn field
       form.find('#isbn').val('');
     }
     console.log(isbn, isbnOK);
-
+/*
     /*fprice validation
     ************************************************
     */
 
     // Read the value from the fprice input field
     var fprice = form.find('#fprice').val();
-    
-    // Check/validate the fprice 
+
+    // Check/validate the fprice
     var fpriceOK = true;
 
 
@@ -61,11 +61,11 @@ $(function(){
     if(!fpriceOK){
       // Show the user info about incorrect format
       $('.on-error.fprice').show();
-      // Empty the fprice field 
+      // Empty the fprice field
       form.find('#fprice').val('');
     }
     console.log(fprice, fpriceOK);
-
+*/
 
     // Do not reload the page
     return false;
