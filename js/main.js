@@ -52,14 +52,14 @@ $(function(){
     // Read the value from the fprice input field
     var fprice = form.find('#fprice').val();
     
-    // Check/validate the ISBN 
+    // Check/validate the fprice 
     var fpriceOK = true;
 
 
-   fpriceOK = fprice.length == 1 && !isNaN(fprice/1);
+   fpriceOK = !isNaN(fprice/1);
     // React on faulty fprice
     if(!fpriceOK){
-      // Show the user info about the correct forma
+      // Show the user info about incorrect format
       $('.on-error.fprice').show();
       // Empty the fprice field 
       form.find('#fprice').val('');
