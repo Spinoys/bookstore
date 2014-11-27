@@ -23,7 +23,7 @@ if( $_POST )
     die('Could not connect: ' . mysqli_error());
   }
 // select database
-  mysql_select_db("bookstore", $con);
+  mysql_select_db("Bookstore", $con);
 
 
 // Get values from form
