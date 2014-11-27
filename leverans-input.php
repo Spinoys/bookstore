@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>Leverans Input</title>
+<meta name="description" content="Register you books">
 <link rel="stylesheet" href="css/meyer-reset.css">
 <!-- main.css-->
 <link rel="stylesheet" href="css/main.css">
