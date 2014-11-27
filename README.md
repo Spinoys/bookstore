@@ -42,3 +42,6 @@ Bokhandeln kontaktar ert utvecklingsteam för att få en prototyp framtagen. De 
 Prata med kunden.
 Skissa på ett gränssnitt med papper och penna. 
 Ta därefter ett förnyat samtal med kunden.
+
+
+2014-11-27: Database updated (version 2)
