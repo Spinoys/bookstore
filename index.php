@@ -19,12 +19,7 @@
     <!-- App starts-->
     <header>
         <nav>
-        <ul>    
-            <li><a href="index.php">Start</a></li>
-            <li><a href="leverans.php">Inleverans</a></li>  
-            <li><a href="index.php">Försäljning</a></li>
-            <li><a href="index.php">Rapporter</a></li>
-        </ul>
+            <?php include 'include/nav.html.php'; ?>
         </nav>
     </header>
 
