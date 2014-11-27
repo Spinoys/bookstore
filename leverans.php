@@ -30,23 +30,23 @@
 
             <div>
             <label for="isbn">ISBN:</label>
-            <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" autofocus maxlength=13> 
+            <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" autofocus maxlength=13 required> 
             </div>
             <div>
             <label for="fprice">F-pris:</label>
-            <input id="fprice" name="fprice" type="text" placeholder="Skriv in Förlags-pris">
+            <input id="fprice" name="fprice" type="text" placeholder="Skriv in Förlags-pris" required>
             </div>
             <div>
             <label for="date">Datum:</label>
-            <input id="date" name="date" type="text" placeholder="Skriv in Inleverans-datum">
+            <input id="date" name="date" type="text" placeholder="Skriv in Inleverans-datum" required>
             </div>
             <div>
             <label for="quantity">Antal:</label>
-            <input id="quantity" name="quantity" type="text" placeholder="Skriv in antal">
+            <input id="quantity" name="quantity" type="text" placeholder="Skriv in antal" required>
             </div>
             <div>
             <label for="shelf">Hylla:</label>
-            <input id="shelf" name="shelf" type="text" placeholder="Skriv in hyll-placering">
+            <input id="shelf" name="shelf" type="text" placeholder="Skriv in hyll-placering" required>
             </div>
             <div class="button">
             <button type="submit">Skicka!</button>
@@ -54,7 +54,6 @@
             <div><span class="on-error isbn">ISBN: Snälla mata in ett 13-siffrigt ISBN-nummer med bara siffror!</span>
             <span class="on-error fprice">F-pris: Snälla mata in ett pris, enbart siffror!</span></div>
         </form>
-
 
 
     </main>
