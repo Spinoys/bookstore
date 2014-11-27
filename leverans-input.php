@@ -1,4 +1,11 @@
+<!DOCTYPE html>
 <html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/meyer-reset.css">
+<!-- main.css-->
+<link rel="stylesheet" href="css/main.css">
+<head>
 <body>
 
 <?php //Fire up PHP
@@ -41,7 +48,9 @@ if (!mysql_query($sql,$con))
   {
   die('Error: ' . mysql_error());
   }
-echo "1 record added";
+echo "<h2>1 book tillagd till registret</h2>";
+ echo "<a href='leverans.php'>För in en ny bok</a><br>";
+  echo "<a href='index.php'>Tillbaka till Framsidan</a>";
 
 // close connection
 mysql_close($con);

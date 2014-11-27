@@ -25,8 +25,8 @@
 
     <main>
         <h3>Inleveransformulär</h3>
-        <div>
-        <form id ="deliveries"method="post" action="leverans-input.php">
+        <form id="deliveries" method="post" action="leverans-input.php">
+            <div>
             <label for="isbn">ISBN:</label>
             <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
             </div>
