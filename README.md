@@ -9,6 +9,9 @@ Anna
 Ömur
 Magnus
 
+2014-11-29:
+DB modifierad/uppdaterad dock author_id kvar eftersom varje författare är ubik pss varje inleverans, försäljning & bok. Har däremot svårt att se att varje hylla skulle vara unik så de finns därför som kolumn i Book_items.
+
 
 	Bokhandeln.
 
