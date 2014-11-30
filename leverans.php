@@ -12,7 +12,7 @@
     <!-- jQuery fallback om jQuery inte kan laddas om google ligger nere eller är bannat i ett land kör vi jQuery från vår server måste vara i vanilla js! -->
     <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
     <!-- Main.js here-->
-    <script src="js/main.js"></script>
+    <!--<script src="js/main.js"></script>-->
 </head>
 
 <body>
