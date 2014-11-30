@@ -60,18 +60,23 @@ VALUES('NULL','$_POST[isbn]','$_POST[quantity]',CURRENT_TIMESTAMP,'$_POST[fprice
   //Or Return to Main Page
   echo "<a href='index.php'>Tillbaka till Framsidan</a><br>";
 
-  //Lathund för att sedan hämta data i PHP med mysqli connectionen med en limit = visa bara 3st av selectade.
-  $query = mysqli_query($con, "SELECT isbn, delivered_quantity, delivery_date, purchase_price, shelf FROM purchased ORDER BY delivery_date LIMIT 3");
+  //Lathund för att sedan hämta data i PHP med mysqli connectionen med en limit = visa bara 3st sortera på delivery_date efter senaste.
+  //Vi SELECT alla * alltså dessa purchase_id, isbn, delivered_quantity, delivery_date, purchase_price, shelf
+  $query = mysqli_query($con, "SELECT * FROM purchased ORDER BY delivery_date DESC LIMIT 3");
+
+
   //Gör om queryn till en associative array så att vi kan accessa dem enkelt genom att bara skriva tex. $row["isbn"] för att fåt ut isbn nummret.
   while($row = mysqli_fetch_array($query))
     echo 
+  "Purchase id:" . $row["purchase_id"]  
+    . " " .   //Line . is the same like + in javascript + 'mellanrum'
     "Isbn: " . $row["isbn"] 
     . " " .   //Line . is the same like + in javascript + 'mellanrum'
-    "Delivered qutantity: " . $row["delivered_quantity"] 
+    "Delivered quantity: " . $row["delivered_quantity"] 
     . " " .    //Line . is the same like + in javascript + 'mellanrum'
     "Delivery Date: " . $row["delivery_date"] 
     . " " .    //Line . is the same like + in javascript + 'mellanrum'
-    "Purchase_price: " . $row["purchase_price"] 
+    "Purchase price: " . $row["purchase_price"] 
     . "  " .   //Line . is the same like + in javascript + 'mellanrum'
     "Shelf " . $row["shelf"] . 
     //Adding <br> after every echo
