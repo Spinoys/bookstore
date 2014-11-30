@@ -21,10 +21,10 @@ $username = "root";
 $password = "mysql";
 $dbname = "bookstore";
 
-$mysqli = mysqli_connect($servername, $username, $password, $dbname);
+$con = mysqli_connect($servername, $username, $password, $dbname);
 
 //if connection went wrong...
-if (mysqli_connect_errno($mysqli)) {
+if (mysqli_connect_errno($con)) {
 echo "Failed to connect to database: " . mysqli_connect_error();
 }
 
@@ -36,7 +36,7 @@ echo "Failed to connect to database: " . mysqli_connect_error();
   $shelf=strip_tags($_POST['shelf']);
 
 //Insert the data
-$insert = mysqli_query($mysqli, "INSERT INTO purchased (isbn, delivered_quantity, delivery_date, purchase_price, shelf)
+$insert = mysqli_query($con, "INSERT INTO purchased (isbn, delivered_quantity, delivery_date, purchase_price, shelf)
   VALUES('$isbn','$quantity',CURRENT_TIMESTAMP,'$fprice','$shelf')");
 //Vi skickar inte med purchase_id då den är AUTO_INCREMENT och kommer därför uppdateras automatiskt och ska därför inte skickas med.
 
@@ -61,7 +61,7 @@ VALUES('NULL','$_POST[isbn]','$_POST[quantity]',CURRENT_TIMESTAMP,'$_POST[fprice
   echo "<a href='index.php'>Tillbaka till Framsidan</a>";
 
 // Lets close the connection
-mysqli_close($mysqli);
+mysqli_close($con);
 //Bye Bye PHP
 } 
 else
