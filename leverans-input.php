@@ -62,6 +62,7 @@ VALUES('NULL','$_POST[isbn]','$_POST[quantity]',CURRENT_TIMESTAMP,'$_POST[fprice
 
   //Lathund för att sedan hämta data i PHP med mysqli connectionen med en limit = visa bara 3st av selectade.
   $query = mysqli_query($con, "SELECT isbn, delivered_quantity, delivery_date, purchase_price, shelf FROM purchased ORDER BY delivery_date LIMIT 3");
+  //Gör om queryn till en associative array så att vi kan accessa dem enkelt genom att bara skriva tex. $row["isbn"] för att fåt ut isbn nummret.
   while($row = mysqli_fetch_array($query))
     echo 
     "Isbn: " . $row["isbn"] 
