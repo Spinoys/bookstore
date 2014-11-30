@@ -12,55 +12,43 @@
 
   <body>
   <?php
+  //if we have a post
+ if($_POST) {
+
+  //Connectiong to db
+$servername = "localhost";
+$username = "root";
+$password = "mysql";
+$dbname = "bookstore";
+
+$mysqli = mysqli_connect($servername, $username, $password, $dbname);
+
+//if connection went wrong...
+if (mysqli_connect_errno($mysqli)) {
+echo "Failed to connect to database: " . mysqli_connect_error();
+}
 
   // Check if someone tries to post
+  //Om man kör mysql eller mysqli måste vi använda stripe_tags för att inte folk ska kunna göra sql-injections
+  $isbn=strip_tags($_POST['isbn']);
+  $quantity=strip_tags($_POST['quantity']);
+  $fprice=strip_tags($_POST['fprice']);
+  $shelf=strip_tags($_POST['shelf']);
 
-  if( $_POST )
+//Insert the data
+$insert = mysqli_query($mysqli, "INSERT INTO purchased (isbn, delivered_quantity, delivery_date, purchase_price, shelf)
+  VALUES('$isbn','$quantity',CURRENT_TIMESTAMP,'$fprice','$shelf')");
+//Vi skickar inte med purchase_id då den är AUTO_INCREMENT och kommer därför uppdateras automatiskt och ska därför inte skickas med.
 
-  // If they do
-  // Lets connect to the database
-  {
-  $con = mysql_connect("localhost","root","mysql");
+/*
+//Lathunden för den tidigare sql satsen
 
-  if (!$con)
-  {
-  die('Could not connect: ' . mysqli_error());
-  }
-
-  // Select the Database we are going to write to
-  // In this case Bookstore
-
-  mysql_select_db("Bookstore", $con);
-
-
-  // Get values from form
-  //But from where?
-
-  $isbn=$_POST['isbn'];
-  $quantity=$_POST['quantity'];
-  $fprice=$_POST['fprice'];
-  $shelf=$_POST['shelf'];
-
-
-  // Insert the data we pulled
-  // just above into mySQL
 $sql="INSERT INTO purchased (purchase_id,isbn,delivered_quantity,delivery_date,purchase_price,shelf)
 VALUES('NULL','$_POST[isbn]','$_POST[quantity]',CURRENT_TIMESTAMP,'$_POST[fprice]','$_POST[shelf]')";
 
 //$sql2 = "INSERT INTO book_item (isbn,title,purchase_price,shelf)
 //VALUES('$_POST[isbn]','$_POST[titel]','$_POST[fprice]','$_POST[shelf]')";
-
-    // Check if operation is
-    // "Successful"
-
-if (!mysql_query($sql,$con))
-  {
-  die('Error: ' . mysql_error());
-  }
-//  if (!mysql_query($sql2,$con))
-//  {
-//  die('Error: ' . mysql_error());
- // }
+*/
 
   // If Success
   // Lets user know
@@ -73,10 +61,15 @@ if (!mysql_query($sql,$con))
   echo "<a href='index.php'>Tillbaka till Framsidan</a>";
 
 // Lets close the connection
-  mysql_close($con);
-  }
-
+mysqli_close($mysqli);
 //Bye Bye PHP
+} 
+else
+{
+    //if we Don't have a post
+  //Visar felmeddlande 2 om man försöker accessa leverans-input.php utan att ha skickat en post i formuläret.
+  echo 'Något gick fel kunde inte komuninicera med databasen var vänlig fyll i formuläret igen.';
+}
 ?>
 </body>
 </html>
