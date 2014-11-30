@@ -13,13 +13,13 @@
   <body>
   <?php
   //if we have a post
- if($_POST) {
+ if(isset($_POST)) {
 
   //Connectiong to db
 $servername = "localhost";
 $username = "root";
 $password = "mysql";
-$dbname = "bookstore";
+$dbname = "Bookstore";
 
 $con = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -52,13 +52,29 @@ VALUES('NULL','$_POST[isbn]','$_POST[quantity]',CURRENT_TIMESTAMP,'$_POST[fprice
 
   // If Success
   // Lets user know
-  echo "<h2>En ny bok tillagd till registret</h2><br/>";
+  echo "<h2>En ny bok tillagd till registret</h2><br>";
 
   // Give option to add new book
-  echo "<a href='leverans.php'>För in en ny bok</a><br/>";
+  echo "<a href='leverans.php'>För in en ny bok</a><br>";
 
   //Or Return to Main Page
-  echo "<a href='index.php'>Tillbaka till Framsidan</a>";
+  echo "<a href='index.php'>Tillbaka till Framsidan</a><br>";
+
+  //Lathund för att sedan hämta data i PHP med mysqli connectionen med en limit = visa bara 3st av selectade.
+  $query = mysqli_query($con, "SELECT isbn, delivered_quantity, delivery_date, purchase_price, shelf FROM purchased ORDER BY delivery_date LIMIT 3");
+  while($row = mysqli_fetch_array($query))
+    echo 
+    "Isbn: " . $row["isbn"] 
+    . " " .   //Line . is the same like + in javascript + 'mellanrum'
+    "Delivered qutantity: " . $row["delivered_quantity"] 
+    . " " .    //Line . is the same like + in javascript + 'mellanrum'
+    "Delivery Date: " . $row["delivery_date"] 
+    . " " .    //Line . is the same like + in javascript + 'mellanrum'
+    "Purchase_price: " . $row["purchase_price"] 
+    . "  " .   //Line . is the same like + in javascript + 'mellanrum'
+    "Shelf " . $row["shelf"] . 
+    //Adding <br> after every echo
+    "<br>";
 
 // Lets close the connection
 mysqli_close($con);
