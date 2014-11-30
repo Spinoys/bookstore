@@ -59,8 +59,8 @@ if (!mysql_query($sql,$con))
   }
 //  if (!mysql_query($sql2,$con))
 //  {
-  die('Error: ' . mysql_error());
-  }
+//  die('Error: ' . mysql_error());
+ // }
 
   // If Success
   // Lets user know
