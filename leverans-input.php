@@ -10,11 +10,9 @@
 
       <!-- main.css-->
       <link rel="stylesheet" href="css/main.css">
-      <head>
+    </head>
 
         <body>
-
-          <!-- Fire up PHP -->
 
           <?php
 
@@ -42,7 +40,6 @@
 
               $isbn=$_POST['isbn'];
               $quantity=$_POST['quantity'];
-              $date=$_POST['date'];
               $fprice=$_POST['fprice'];
               $shelf=$_POST['shelf'];
 
@@ -83,7 +80,5 @@ if (!mysql_query($sql,$con))
 
 //Bye Bye PHP
 ?>
-
-<!-- Bye! -->
 </body>
 </html>

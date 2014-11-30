@@ -35,10 +35,6 @@
             <input id="fprice" name="fprice" type="text" placeholder="Skriv in Förlags-pris" required>
             </div>
             <div>
-            <label for="date">Datum:</label>
-            <input id="date" name="date" type="text" placeholder="Skriv in Datum" required>
-            </div>
-            <div>
             <label for="quantity">Antal:</label>
             <input id="quantity" name="quantity" type="text" placeholder="Skriv in antal" required>
             </div>
