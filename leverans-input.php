@@ -42,15 +42,15 @@
 
               $isbn=$_POST['isbn'];
               $quantity=$_POST['quantity'];
-              $titel=$_POST['titel'];
+              $date=$_POST['date'];
               $fprice=$_POST['fprice'];
               $shelf=$_POST['shelf'];
 
 
               // Insert the data we pulled
               // just above into mySQL
-$sql="INSERT INTO purchased (purchase_id,isbn,delivered_quantity,delivery_date)
-VALUES('NULL','$_POST[isbn]','$_POST[quantity]',CURRENT_TIMESTAMP)";
+$sql="INSERT INTO purchased (purchase_id,isbn,delivered_quantity,delivery_date,purchase_price,shelf)
+VALUES('NULL','$_POST[isbn]','$_POST[quantity]',CURRENT_TIMESTAMP,'$_POST[fprice]','$_POST[shelf]')";
 
 //$sql2 = "INSERT INTO book_item (isbn,title,purchase_price,shelf)
 //VALUES('$_POST[isbn]','$_POST[titel]','$_POST[fprice]','$_POST[shelf]')";
