@@ -33,7 +33,6 @@
 
     <main>
 
-       <!-- super ful fix har inte rört designen bara fixat kod! fixa dessa br i cssen thx :D --> 
           <div id="start-modul" class="modul">
 <?php
 
