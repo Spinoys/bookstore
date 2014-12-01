@@ -1,5 +1,6 @@
 // DOM ready
 $(function() {
+    
 
     // Add a submit handler to the first form
     $('#deliveries').submit(submitDelivery);
@@ -36,7 +37,6 @@ $(function() {
         //and that it is only numbers
         isbnOK = isbn.length == 13 && !isNaN(isbn / 1);
 
-<<<<<<< HEAD
     // React on faulty isbn
     if(!isbnOK){
       // Show the user info about incorrect format
@@ -73,7 +73,6 @@ $(function() {
     // Do not reload the page
     return false;
   }
-=======
         // React on faulty isbn
         if (!isbnOK) {
             // Show the user info about incorrect format
@@ -82,7 +81,6 @@ $(function() {
             form.find('#isbn').val('');
         }
         console.log(isbn, isbnOK);
->>>>>>> JS validation fix för isbn && f-pris men vi behöver se över om vi inte ska köra allt via ajax till php för att undvika page loads.
 
         // Read the value from the fprice input field
         var fprice = form.find('#fprice').val();

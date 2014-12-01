@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Bookstore</title>
-    <meta name="description" content="Awesome bookstore">
-    <link rel="stylesheet" href="css/meyer-reset.css">
-    <!-- main.css-->
-    <link rel="stylesheet" href="css/main.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- jQuery fallback om jQuery inte kan laddas om google ligger nere eller är bannat i ett land kör vi jQuery från vår server måste vara i vanilla js! -->
-    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-    <!-- Main.js here-->
-    <!--<script src="js/main.js"></script>-->
-</head>
-
-<body>
-    <!-- App starts-->
-    <header>
-        <nav>
-            <?php include 'include/nav.html.php'; ?>
-        </nav>
-    </header>
-
-    <main>
-        <h3>Inleveransformulär</h3>
-        <form id="deliveries" method="post" action="leverans-input.php">
+    <h3>Inleveransformulär</h3>
+        <form id="deliveries" method="post" action="main_application_template.php">
             <div>
             <label for="isbn">ISBN:</label>
             <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
@@ -48,17 +22,5 @@
             <div><span class="on-error isbn">ISBN: Snälla mata in ett 13-siffrigt ISBN-nummer med bara siffror!</span>
             <span class="on-error fprice">F-pris: Snälla mata in ett pris, enbart siffror!</span></div>
         </form>
-
-
-
-    </main>
-
-    <footer>
-    <p>FooterInfo</p>
-    </footer>
-    <!-- App ends-->
-
-
-</body>
-
-</html>
+        <!-- denna tomma box kommer visa resultatet! -->
+        <div id="inleverans_resultat_ajax">...</div>
