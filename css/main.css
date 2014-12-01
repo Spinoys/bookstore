@@ -97,7 +97,7 @@ header nav > ul {
 
 header nav ul li {
   position:relative;
-  height:30px;
+  height: 30px;
 }
 header nav > ul > li {
   float:left;
@@ -105,7 +105,7 @@ header nav > ul > li {
 
 header nav > ul li a {
   padding-top:6px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   display: block;
 }
 
@@ -117,7 +117,7 @@ header nav > ul > li > a {
 
 header nav a {
   display:block;
-  padding: 0 8px 8px;
+  padding: 0 10px 8px;
   text-decoration:none;
   color:#3b3b3b;
 }
@@ -129,5 +129,5 @@ header nav a:hover {
 }
 
 .active {
-     text-decoration:underline;
+     background-color: #efcbae;
   }
