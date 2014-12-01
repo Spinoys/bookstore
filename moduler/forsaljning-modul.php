@@ -8,10 +8,10 @@
             <label for="quantity">Antal:</label>
             <input id="sell_qty" name="sell_qty" type="text" placeholder="antal sålda exemplar" required>
             </div>
-            <div>
-            <label for=" ">pris (exkl moms):</label>
-            <input id="sell_price" name="sell_price" type="text" placeholder="försäljninhgspris eklusive moms" required>
-            </div>
+            <!-- <div>
+            <label for="price">pris (exkl moms):</label>
+            <input id="sell_price" name="sell_price" type="text" placeholder="försäljningspris exklusive moms" required>
+            </div> -->
             <div class="button">
             <button type="submit">Skicka!</button>
             </div>
