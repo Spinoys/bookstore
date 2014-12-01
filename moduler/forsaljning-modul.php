@@ -1,17 +1,16 @@
-<strong>Tjena försäljningsmodulen!</strong>
     <h3>Försäljningsformulär</h3>
         <form id="sales" method="post" action="forsalj-input.php">
             <div>
             <label for="isbn">ISBN:</label>
-            <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
+            <input id="isbn" name="isbn" type="text" placeholder="ISBN-nummer" maxlength=13 required>
             </div>
             <div>
             <label for="quantity">Antal:</label>
-            <input id="sell_qty" name="sell_qty" type="text" placeholder="Skriv in antal sålda exemplar" required>
+            <input id="sell_qty" name="sell_qty" type="text" placeholder="antal sålda exemplar" required>
             </div>
             <div>
             <label for=" ">pris (exkl moms):</label>
-            <input id="sell_price" name="sell_price" type="text" placeholder="Skriv in försäljninhgspris eklusive moms" required>
+            <input id="sell_price" name="sell_price" type="text" placeholder="försäljninhgspris eklusive moms" required>
             </div>
             <div class="button">
             <button type="submit">Skicka!</button>
