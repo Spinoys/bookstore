@@ -32,15 +32,11 @@ forsalj.php<!DOCTYPE html>
             </div>
             <div>
             <label for="quantity">Antal:</label>
-            <input id=" " name=" " type="text" placeholder="Skriv in antal sålda exemplar" required>
+            <input id="sell_qty" name="sell_qty" type="text" placeholder="Skriv in antal sålda exemplar" required>
             </div>
             <div>
             <label for=" ">pris (exkl moms):</label>
-            <input id=" " name=" " type="text" placeholder="Skriv in försäljninhgspris eklusive moms" required>
-            </div>
-            <div>
-            <label for="shelf">Hylla:</label>
-            <input id="shelf" name="shelf" type="text" placeholder=" " required>
+            <input id="sell_price" name="sell_price" type="text" placeholder="Skriv in försäljninhgspris eklusive moms" required>
             </div>
             <div class="button">
             <button type="submit">Skicka!</button>
