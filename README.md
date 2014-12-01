@@ -9,6 +9,13 @@ Anna
 Ömur
 Magnus
 
+2014-12-01:
+Kunden vill att personalen vid inleverans direkt ska kunna mata in isbn, inköpspris, leveransdatum, antal levererade ex samt hyllplats
+MEN ÄVEN
+kunna lägga in författare och/eller titel om det nya författare och/eller titlar. Det senare vill kunden ska kunna göras antingen i samma fönster/sida eller att en ny sida visas då man klickar "Skicka!" där man kan lägga in uppgifter om författare och / eller titel.
+
+
+
 2014-11-29:
 DB modifierad/uppdaterad dock author_id kvar eftersom varje författare är ubik pss varje inleverans, försäljning & bok. Har däremot svårt att se att varje hylla skulle vara unik så de finns därför som kolumn i Book_items.
 
