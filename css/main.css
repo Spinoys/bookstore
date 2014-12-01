@@ -8,6 +8,8 @@ body {
 main {
   display:block;
   height: 400px;
+  margin-top: 80px;
+  margin-left:15px;
 }
 
 header {
