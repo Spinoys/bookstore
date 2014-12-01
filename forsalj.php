@@ -25,10 +25,33 @@ forsalj.php<!DOCTYPE html>
 
     <main>
         <h3>Försäljningsformulär</h3>
-        
+        <form id="sales" method="post" action="forsalj-input.php">
+            <div>
+            <label for="isbn">ISBN:</label>
+            <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
+            </div>
+            <div>
+            <label for="quantity">Antal:</label>
+            <input id=" " name=" " type="text" placeholder="Skriv in antal sålda exemplar" required>
+            </div>
+            <div>
+            <label for=" ">pris (exkl moms):</label>
+            <input id=" " name=" " type="text" placeholder="Skriv in försäljninhgspris eklusive moms" required>
+            </div>
+            <div>
+            <label for="shelf">Hylla:</label>
+            <input id="shelf" name="shelf" type="text" placeholder=" " required>
+            </div>
+            <div class="button">
+            <button type="submit">Skicka!</button>
+            </div>
+            <div><span class="on-error isbn">ISBN: Snälla mata in ett 13-siffrigt ISBN-nummer med bara siffror!</span>
+            <span class="on-error fprice">F-pris: Snälla mata in ett pris, enbart siffror!</span></div>
+        </form>
 
 
-    </main>
+    </main> 
+
 
     <footer>
     <p>FooterInfo</p>
