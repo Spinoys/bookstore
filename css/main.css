@@ -75,6 +75,16 @@ span {
   width: 480px;
 }
 
+.form-input {
+   width: 500px;
+   clear: both;
+}
+
+.form-input input {
+        width: 100%;
+        clear: both;
+}
+
 /* ****************************Navigation******************************* */
 
 
