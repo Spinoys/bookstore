@@ -12,19 +12,19 @@
             <label for="titel">Förnamn:</label>
             <input id="fornamn" name="fornamn" type="text" placeholder="Skriv in Förnamnet på författaren" required>
             </div>
-            <div>
+            <div class="form-input">
             <label for="titel">Efternamn:</label>
             <input id="efternamn" name="efternamn" type="text" placeholder="Skriv in Efternamnet på författaren" required>
             </div>
-            <div>
+            <div class="form-input">
             <label for="quantity">Antal:</label>
             <input id="quantity" name="quantity" type="text" placeholder="Skriv in antal" required>
             </div>
-            <div>
+            <div class="form-input">
             <label for="fprice">F-pris:</label>
             <input id="fprice" name="fprice" type="text" placeholder="Skriv in Förlags-pris" required>
             </div>
-            <div>
+            <div class="form-input">
             <label for="shelf">Hylla:</label>
             <input id="shelf" name="shelf" type="text" placeholder="Skriv in hyll-placering" required>
             </div>
