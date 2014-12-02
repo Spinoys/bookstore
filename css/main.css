@@ -7,7 +7,7 @@ body {
 
 main {
   display:block;
-  height: 600px;
+  height: 700px;
   margin-top: 80px;
   margin-left:15px;
 }
@@ -57,7 +57,7 @@ input {
 form {
 background: aqua;
 width:550px;
-height:500px;
+height:600px;
 font-size: 14px;
 font-style: italic;
 line-height: 24px;
