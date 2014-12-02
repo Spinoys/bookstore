@@ -13,7 +13,7 @@
             <input id="sell_price" name="sell_price" type="text" placeholder="försäljningspris exklusive moms" required>
             </div> -->
             <div class="button">
-            <button type="submit">Skicka!</button>
+            <button class="black" type="submit">Skicka!</button>
             </div>
             <div><span class="on-error isbn">ISBN: Snälla mata in ett 13-siffrigt ISBN-nummer med bara siffror!</span>
             <span class="on-error fprice">F-pris: Snälla mata in ett pris, enbart siffror!</span></div>
