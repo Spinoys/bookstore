@@ -46,7 +46,7 @@ $(function() {
     }
     console.log(isbn, isbnOK);
 
-    // Not working to temporarily turned off
+   
 
     /*fprice validation
     ************************************************
@@ -70,40 +70,9 @@ $(function() {
     console.log(fprice, fpriceOK);
 
 
-    // Do not reload the page
-    return false;
-  }
-        // React on faulty isbn
-        if (!isbnOK) {
-            // Show the user info about incorrect format
-            $('.on-error.isbn').show();
-            // Empty the isbn field
-            form.find('#isbn').val('');
-        }
-        console.log(isbn, isbnOK);
-
-        // Read the value from the fprice input field
-        var fprice = form.find('#fprice').val();
-
-        // Check/validate the fprice
-        var fpriceOK = true;
-
-
-        fpriceOK = !isNaN(fprice / 1);
-        // React on faulty fprice
-        if (!fpriceOK) {
-            // Show the user info about incorrect format
-            $('.on-error.fprice').show();
-            // Empty the fprice field
-            form.find('#fprice').val('');
-        }
-        console.log(fprice, fpriceOK);
-
 
         // Do not reload the page
         return false;
-
-
     }
 
 
