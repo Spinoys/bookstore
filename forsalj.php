@@ -31,8 +31,12 @@ forsalj.php<!DOCTYPE html>
             <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
             </div>
             <div>
-            <label for="titel">Tite:</label>
+            <label for="titel">Titel:</label>
             <input id="titel" name="titel" type="text" placeholder="Skriv in Titeln på boken" required>
+            </div>
+            <div>
+            <label for="titel">Förnamn:</label>
+            <input id="fornamn" name="fornamn" type="text" placeholder="Skriv in Förnamnet på författaren" required>
             </div>
             <div>
             <label for="quantity">Antal:</label>
