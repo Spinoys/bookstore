@@ -64,6 +64,9 @@ font-style: italic;
 line-height: 24px;
 font-weight: bold;
 text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
 }
 
 .button {
