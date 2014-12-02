@@ -54,8 +54,9 @@ input {
   display: inline-block;
 }
 
-form div {
-  float: left;
+form {
+background: azure;
+
 }
 
 .button {
