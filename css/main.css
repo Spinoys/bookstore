@@ -99,9 +99,10 @@ span {
 }
 
 .form-input input {
-        width: 100%;
-        clear: both;
-        border: 1px solid #999;
+    width: 100%;
+    clear: both;
+    border: 1px solid #999;
+    height: 30px;
 }
 
 /* ****************************Navigation******************************* */
