@@ -5,6 +5,10 @@
             <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
             </div>
             <div>
+            <label for="titel">Titel:</label>
+            <input id="titel" name="titel" type="text" placeholder="Skriv in Titeln på boken" required>
+            </div>
+            <div>
             <label for="quantity">Antal:</label>
             <input id="quantity" name="quantity" type="text" placeholder="Skriv in antal" required>
             </div>
