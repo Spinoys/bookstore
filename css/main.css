@@ -55,7 +55,6 @@ input {
 }
 
 form {
-/*background: azure;*/
 background: aqua;
 width:550px;
 height:450px;
@@ -68,6 +67,11 @@ text-decoration: none;
 -moz-border-radius: 10px;
 border-radius: 10px;
 padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
 .button {
@@ -91,6 +95,7 @@ span {
 .form-input {
    width: 500px;
    clear: both;
+   margin: auto;
 }
 
 .form-input input {
