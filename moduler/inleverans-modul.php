@@ -4,6 +4,7 @@
             <label for="isbn">ISBN:</label>
             <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
             </div>
+            <br/>
             <div>
             <label for="titel">Titel:</label>
             <input id="titel" name="titel" type="text" placeholder="Skriv in Titeln på boken" required>
