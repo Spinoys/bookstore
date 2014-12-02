@@ -7,7 +7,7 @@ body {
 
 main {
   display:block;
-  height: 500px;
+  height: 600px;
   margin-top: 80px;
   margin-left:15px;
 }
@@ -55,7 +55,10 @@ input {
 }
 
 form {
-background: azure;
+/*background: azure;*/
+background: aqua;
+width:550px;
+height:450px;
 
 }
 
