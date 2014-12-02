@@ -13,6 +13,10 @@
             <input id="fornamn" name="fornamn" type="text" placeholder="Skriv in Förnamnet på författaren" required>
             </div>
             <div>
+            <label for="titel">Efternamn:</label>
+            <input id="efternamn" name="efternamn" type="text" placeholder="Skriv in Efternamnet på författaren" required>
+            </div>
+            <div>
             <label for="quantity">Antal:</label>
             <input id="quantity" name="quantity" type="text" placeholder="Skriv in antal" required>
             </div>
