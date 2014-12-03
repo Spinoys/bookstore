@@ -7,8 +7,8 @@ if (isset($_POST['isbn'], $_POST['title'], $_POST['first_name'], $_POST['last_na
 
 	$isbn = strip_tags($_POST['isbn']);
 	$title = strip_tags($_POST['title']);
-	$fornamn = strip_tags($_POST['first_name']);
-	$efternamn = strip_tags($_POST['last_name']);
+	$first_name = strip_tags($_POST['first_name']);
+	$last_name = strip_tags($_POST['last_name']);
 	$quantity = strip_tags($_POST['quantity']);
 	$fprice = strip_tags($_POST['fprice']);
 	$shelf = strip_tags($_POST['shelf']);
