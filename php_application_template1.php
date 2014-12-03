@@ -3,12 +3,12 @@
 include 'pdo_helper.php';
 
 //if we have a post
-if (isset($_POST['isbn'], $_POST['title'], $_POST['fornamn'], $_POST['efternamn'], $_POST['quantity'], $_POST['fprice'], $_POST['shelf'], $_POST['description'])) {
+if (isset($_POST['isbn'], $_POST['title'], $_POST['first_name'], $_POST['last_name'], $_POST['quantity'], $_POST['fprice'], $_POST['shelf'], $_POST['description'])) {
 
 	$isbn = strip_tags($_POST['isbn']);
 	$title = strip_tags($_POST['title']);
-	$fornamn = strip_tags($_POST['fornamn']);
-	$efternamn = strip_tags($_POST['efternamn']);
+	$fornamn = strip_tags($_POST['first_name']);
+	$efternamn = strip_tags($_POST['last_name']);
 	$quantity = strip_tags($_POST['quantity']);
 	$fprice = strip_tags($_POST['fprice']);
 	$shelf = strip_tags($_POST['shelf']);
