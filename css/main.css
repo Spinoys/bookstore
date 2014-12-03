@@ -143,23 +143,6 @@ span {
   width: 480px;
 }
 
-.form-input {
-   width: 500px;
-   clear: both;
-   margin: auto;
-}
-
-.form-input input {
-    width: 100%;
-    clear: both;
-    border: 1px solid #999;
-    height: 30px;
-    font-size: 15px;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    padding-left: 6px;
-}
 
 
 /* ****************************Navigation******************************* */
