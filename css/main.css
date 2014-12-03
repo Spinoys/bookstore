@@ -44,11 +44,13 @@ footer {
 #deliveries {
 
   height:450px;
+  padding-top: 30px; 
 }
 
 #sales {
 
   height:164px;
+  padding-top: 30px;
 }
 
 #inleverans_resultat_ajax {
@@ -64,7 +66,7 @@ input {
 
 form {
 
-  margin: 25px;
+  margin: 20px 25px 25px 25px;
   display: inline-block;
   width:550px;
   background: rgb(252, 188, 50);
