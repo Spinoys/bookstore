@@ -9,12 +9,12 @@
             <input id="titel" name="titel" type="text" placeholder="Skriv in Titeln på boken" required>
           </div>
             <div class="form-input">
-            <label for="titel">Förnamn:</label>
-            <input id="fornamn" name="fornamn" type="text" placeholder="Skriv in Förnamnet på författaren" required>
+            <label for="first_name">Förnamn:</label>
+            <input id="first_name" name="first_name" type="text" placeholder="Skriv in Förnamnet på författaren" required>
             </div>
             <div class="form-input">
-            <label for="titel">Efternamn:</label>
-            <input id="efternamn" name="efternamn" type="text" placeholder="Skriv in Efternamnet på författaren" required>
+            <label for="last_name">Efternamn:</label>
+            <input id="last_name" name="last_name" type="text" placeholder="Skriv in Efternamnet på författaren" required>
             </div>
             <div class="form-input">
             <label for="quantity">Antal:</label>
