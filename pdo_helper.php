@@ -50,4 +50,4 @@ class PDOHelper {
 }
 
 //Our connection
-$dbh = new PDOHelper("localhost", "Bookstore", "root", "mysql");
+$dbh = new PDOHelper("localhost", "bookstore", "root", "mysql");
