@@ -33,8 +33,7 @@ if (isset($_POST['isbn'], $_POST['title'], $_POST['first_name'], $_POST['last_na
 	 */
 	$result = $dbh->jsonQuery("SELECT * FROM purchased ORDER BY delivery_date DESC LIMIT 3");
 // Eka ut JSON:en till din AJAX-drivna webb:
-	//echo ($result);här får vi lägga in vilkor för   Om redan finns det isbn som skrivits in
-//och även om författare finns! edit by Magnus
+	//echo ($result);
 	echo json_encode($result);
 
 } else {
