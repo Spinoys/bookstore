@@ -5,8 +5,8 @@
             <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
             </div>
             <div class="form-input">
-            <label for="titel">Titel:</label>
-            <input id="titel" name="titel" type="text" placeholder="Skriv in Titeln på boken" required>
+            <label for="title">Titel:</label>
+            <input id="title" name="title" type="text" placeholder="Skriv in Titeln på boken" required>
           </div>
             <div class="form-input">
             <label for="first_name">Förnamn:</label>

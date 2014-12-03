@@ -4,9 +4,13 @@
         //Form datan
         var formData = {
             'isbn'     : $('input[name=isbn]').val(),
+            'title'    : $('input[name=title]').val(),
+            'first_name'    : $('input[name=first_name]').val(),
+            'last_name'    : $('input[name=last_name]').val(),
             'quantity' : $('input[name=quantity]').val(),
             'fprice'   : $('input[name=fprice]').val(),
-            'shelf'    : $('input[name=shelf]').val()
+            'shelf'    : $('input[name=shelf]').val(),
+            'description'    : $('input[name=description]').val()
         };
 
         $.ajax({
