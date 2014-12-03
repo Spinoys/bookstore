@@ -8,7 +8,7 @@ body {
 main {
   display:block;
   height: 700px;
-  margin-top: 80px;
+  margin-top: 70px;
   margin-left:15px;
 }
 
@@ -43,12 +43,12 @@ footer {
 
 #deliveries {
 
-  height:650px;
+  height:450px;
 }
 
 #sales {
 
-  height:184px;
+  height:164px;
 }
 
 #inleverans_resultat_ajax {
@@ -85,27 +85,35 @@ form {
 
 }
 
+label {
+  margin-top: 7px;
 
+
+  display: inline-block;
+}
 .form-input {
    width: 500px;
    clear: both;
    margin: auto;
+   height: 40px;
 }
 
 .form-input input {
-    width: 100%;
+    width: 70%;
     clear: both;
     border: 1px solid #999;
-    height: 30px;
+    height: 25px;
     font-size: 15px;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     padding-left: 6px;
+    float: right;
 }
 
 .button {
-  margin-top: 5px;
+  margin-top: 25px;
+  margin-right: 36px;
   clear:both;
 }
 
@@ -119,6 +127,7 @@ form {
   text-shadow: 1px 1px 1px #6d6d6d;
   background-color: #454545;
   cursor: pointer;
+  float: right;
 }
 .black:hover {
   border: 1px solid #363636;
