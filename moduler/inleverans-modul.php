@@ -28,7 +28,6 @@
             <label for="shelf">Hylla:</label>
             <input id="shelf" name="shelf" type="text" placeholder="Skriv in hyll-placering" required>
             </div>
-            </div>
             <div class="form-input">
             <label for="description">Beskrivning:</label>
             <input id="description" name="description" type="text" placeholder="Skriv in en kort beskrivning" required>
