@@ -3,14 +3,14 @@
 
         //Form datan
         var formData = {
-            'isbn'     : $('input[name=isbn]').val(),
-            'title'    : $('input[name=title]').val(),
+            'isbn'          : $('input[name=isbn]').val(),
+            'title'         : $('input[name=title]').val(),
             'first_name'    : $('input[name=first_name]').val(),
-            'last_name'    : $('input[name=last_name]').val(),
-            'quantity' : $('input[name=quantity]').val(),
-            'fprice'   : $('input[name=fprice]').val(),
-            'shelf'    : $('input[name=shelf]').val(),
-            'description'    : $('input[name=description]').val()
+            'last_name'     : $('input[name=last_name]').val(),
+            'quantity'      : $('input[name=quantity]').val(),
+            'fprice'        : $('input[name=fprice]').val(),
+            'shelf'         : $('input[name=shelf]').val(),
+            'description'   : $('input[name=description]').val()
         };
 
         $.ajax({
@@ -23,12 +23,22 @@
             dataType    : 'json',
             success: function(data){
                 //Getting data to console
-              console.log(data);
-            $("#inleverans_resultat_ajax").show().html('En ny bok tillagd till registret.');
+                console.log(data);
+                
+                //clear input fields
+                $('.form-input').find(':input').each(function() {
+                    switch(this.type) {
+                        case 'text':
+                            $(this).val('');
+                            break;
+                    }
+                });
+
+                $("#inleverans_resultat_ajax").show().html('Leveransen är registrerad!');
 
             },
              error: function(xhr, status, error) {
-            $("#inleverans_resultat_ajax").show().html('Kunde inte uppdatera.');
+            $("#inleverans_resultat_ajax").show().html('Kunde inte registrera leveransen.');
              }
         });
         // försäkrar oss om att den inte kan skickas som en vanlig php sida som behöver laddas om.
