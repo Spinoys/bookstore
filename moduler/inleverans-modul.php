@@ -40,3 +40,4 @@
         </form>
         <!-- denna tomma box kommer visa resultatet! -->
         <div id="inleverans_resultat_ajax">...</div>
+        
