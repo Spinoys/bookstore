@@ -1,5 +1,5 @@
     <h3>Inleveransformulär</h3>
-    <form id="deliveries" method="post" action="php_application_template1.php">
+    <form id="deliveries" method="post" action="delivery.php">
         <div class="form-input">
             <label for="isbn">ISBN:</label>
             <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>

@@ -18,7 +18,7 @@
              $("#inleverans_resultat_ajax").show().html('<img src="img/ajaxsnurra.gif">Laddar...');
                 },
             type        : 'POST',
-            url         : 'php_application_template1.php',
+            url         : 'delivery.php',
             data        : formData, // our data object
             dataType    : 'json',
             success: function(data){
