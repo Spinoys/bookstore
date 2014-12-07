@@ -27,6 +27,7 @@
    'title' => $row['title'],
     'author_first_name' => $row['author_first_name'],
     'author_last_name' => $row['author_last_name'],
+    'price_with_vat' => $row['price_with_vat'],
     'description' => $row['description']
    );
   array_push($data, $row_data);
