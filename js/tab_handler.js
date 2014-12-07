@@ -3,7 +3,7 @@ $(function() {
     //active a class on first tab
     var activeClass = 'start';
     //active modul is #start-modul so we hide all other tabs!
-    $("#inleverans-modul,#forsaljning-modul,#rapporter-modul,#selling-price-modul").hide();
+    $("#inleverans-modul,#forsaljning-modul,#report-modul,#selling-price-modul").hide();
 
     //clicks on menu
     $("#mainNav a").click(function() {
@@ -61,9 +61,9 @@ $(function() {
             */
 
         }
-        if (activeClass == 'rapporter') {
+        if (activeClass == 'report') {
             //calling hideNseekFunc that shows and hide modules
-            hideNseekFunc("rapporter-modul");
+            hideNseekFunc("report-modul");
 
             /*
             Add your code here for module rapporter

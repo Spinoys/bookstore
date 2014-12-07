@@ -26,15 +26,14 @@
                 <li><a href="#" id="start" class="active">Start</a></li>
                 <li><a href="#" id="inleverans">Inleverans</a></li>
                 <li><a href="#" id="forsaljning">Försäljning</a></li>
-                <li><a href="#" id="rapporter">Rapporter</a></li>
+                <li><a href="#" id="report">Rapporter</a></li>
                 <li><a href="#" id="sell_price">Ändra försäljningspris</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-
-      <div id="start-modul" class="modul">
+<main>
+    <div id="start-modul" class="modul">
         <?php include 'moduler/start-modul.php'; ?>
     </div>
     <div id="inleverans-modul" class="modul">
@@ -43,11 +42,11 @@
     <div id="forsaljning-modul" class="modul">
         <?php include 'moduler/forsaljning-modul.php'; ?>
     </div>
-    <div id="rapporter-modul" class="modul">
-        <?php include 'moduler/rapporter-modul.php'; ?>
-    </div>
     <div id="selling-price-modul" class="modul">
         <?php include 'moduler/selling-price-modul.php'; ?>
+    </div>
+    <div id="report-modul" class="modul">
+        <?php include 'moduler/report-modul.php'; ?>
     </div>
 </main>
 
@@ -63,6 +62,7 @@
 <!-- Module JS -->
 <script src="js/moduler/selling-price-modul.js"></script>
 <!-- Module JS -->
+<script src="js/moduler/report-modul.js"></script>
 
 <!-- This js have to be here and will not work in the header -->
 <script src="js/tab_handler.js"></script>
