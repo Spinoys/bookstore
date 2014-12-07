@@ -1,7 +1,7 @@
     <?php ?>
     <div>
     <h3>Rapportformulär</h3>
-    <form id="report" method="post" action="report.php">
+    <form id="report-form" method="post" action="report.php">
         <div class="form-input">
             <label for="isbn">ISBN:</label>
             <input id="isbn" name="isbn" type="text" placeholder="Skriv in ISBN-nummer" maxlength=13 required>
@@ -22,13 +22,12 @@
     </div>
 
     <div id="search-result">
-    	<h3>Rapport</h3>
     	<table id="result-table">
     		<tr>
     			<th>ISBN</th>
     			<th>Title</th>
-    			<th>Försäljningspris (i genomsnitt per titel)</th>
-    			<th>Inköpspris (i genomsnitt per titel)</th>
+    			<th>Försäljningspris (i genomsnitt)</th>
+    			<th>Inköpspris (i genomsnitt)</th>
     			<th>Antal sålda</th>
     			<th>Försäljningssumma</th>
     			<th>Inköpssumma</th>
