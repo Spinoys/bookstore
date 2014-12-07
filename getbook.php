@@ -13,7 +13,7 @@
 
 // Select all from correct table
 
- $sql = 'SELECT * FROM current_stock_extended_and_present_prices_vid_vat';
+ $sql = 'SELECT * FROM current_stock_extended_and_present_prices_with_vat';
 
  $result = mysql_query($sql,$conn);
 
