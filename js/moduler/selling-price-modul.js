@@ -2,7 +2,7 @@
 $("#change-sell-price").hide();
 
 //selling-price-modul ajax
-$('#sell_price_form').submit(function(event) {
+$('#sellingprice').submit(function(event) {
 
     //Form data
     var formData = {

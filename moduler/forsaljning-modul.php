@@ -5,8 +5,8 @@
             <input id="isbn" name="isbn" type="text" placeholder="ISBN-nummer" maxlength=13 required>
             </div>
             <div class="form-input">
-            <label for="quantity">Antal:</label>
-            <input id="sell_qty" name="sell_qty" type="text" placeholder="antal sålda exemplar" required>
+            <label for="sales_quantity">Antal:</label>
+            <input id="sales_quantity" name="sales_quantity" type="text" placeholder="antal sålda exemplar" required>
             </div>
             <!-- <div>
             <label for="price">pris (exkl moms):</label>

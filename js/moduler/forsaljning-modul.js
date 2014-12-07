@@ -1,10 +1,10 @@
 //forsaljning-modul ajax
-    $('form').submit(function(event) {
+    $('#sales').submit(function(event) {
 
         //Form datan
         var formData = {
             'isbn'          : $('input[name=isbn]').val(),
-            'quantity'      : $('input[name=quantity]').val()
+            'sales_quantity'      : $('input[name=sales_quantity]').val()
         };
 
         $.ajax({
@@ -12,7 +12,7 @@
              $("#forsaljning_resultat_ajax").show().html('<img src="img/ajaxsnurra.gif">Laddar...');
                 },
             type        : 'POST',
-            url         : 'forsalj.php',
+            url         : 'forsalj-input.php',
             data        : formData, // our data object
             dataType    : 'json',
             success: function(data){

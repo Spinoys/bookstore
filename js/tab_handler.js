@@ -3,7 +3,7 @@ $(function() {
     //active a class on first tab
     var activeClass = 'start';
     //active modul is #start-modul so we hide all other tabs!
-    $("#inleverans-modul,#forsaljning-modul,#rapporter-modul,#rapporter-modul, #selling-price-modul").hide();
+    $("#inleverans-modul,#forsaljning-modul,#rapporter-modul,#selling-price-modul").hide();
 
     //clicks on menu
     $("#mainNav a").click(function() {
