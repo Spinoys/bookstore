@@ -4,19 +4,20 @@
   die('Mysql connection error '.mysql_error());
  }
 
- <!-- Connect to the correct database -->
+// Connect to the correct database
 
  $db = mysql_select_db('bookstore',$conn);
  if(!$db){
   die('Database selection failed '.mysql_error());
  }
-<!-- Select all from correct table -->
+
+// Select all from correct table
 
  $sql = 'SELECT * FROM current_stock_extended';
 
  $result = mysql_query($sql,$conn);
 
- <!-- Fetch the data from table -->
+ // Fetch the data from table
 
   $data = array();
  while($row = mysql_fetch_array($result)){
@@ -30,5 +31,7 @@
   array_push($data, $row_data);
  }
 
+  // Echo the results, send them back as JSON
+  
  echo json_encode($data);
 ?>
