@@ -1,5 +1,5 @@
 <h3>Formulär för att ändra försäljningspris</h3>
-<form id="sell_price_form" method="post" action="change-selling-price.php">
+<form id="sellingprice" method="post" action="change-selling-price.php">
     <div class="form-input">
         <label for="isbn">ISBN:</label>
         <input id="isbn" name="isbn" type="text" placeholder="ISBN-nummer" maxlength=13 required>
