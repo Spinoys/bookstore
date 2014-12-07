@@ -1,5 +1,5 @@
  //inleverans-modul ajax
-    $('form').submit(function(event) {
+    $('#deliveries').submit(function(event) {
 
         //Form datan
         var formData = {
