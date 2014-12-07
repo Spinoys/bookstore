@@ -46,8 +46,8 @@
     <div id="rapporter-modul" class="modul">
         <?php include 'moduler/rapporter-modul.php'; ?>
     </div>
-    <div id="sell-price-modul" class="modul">
-        <?php include 'moduler/sell-price-modul.php'; ?>
+    <div id="selling-price-modul" class="modul">
+        <?php include 'moduler/selling-price-modul.php'; ?>
     </div>
 </main>
 
@@ -58,6 +58,10 @@
 
 <!-- Module JS -->
 <script src="js/moduler/inleverans-modul.js"></script>
+<!-- Module JS -->
+
+<!-- Module JS -->
+<script src="js/moduler/selling-price-modul.js"></script>
 <!-- Module JS -->
 
 <!-- This js have to be here and will not work in the header -->

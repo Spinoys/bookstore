@@ -3,7 +3,7 @@ $(function() {
     //active a class on first tab
     var activeClass = 'start';
     //active modul is #start-modul so we hide all other tabs!
-    $("#inleverans-modul,#forsaljning-modul,#rapporter-modul,#rapporter-modul, #sell-price-modul").hide();
+    $("#inleverans-modul,#forsaljning-modul,#rapporter-modul,#rapporter-modul, #selling-price-modul").hide();
 
     //clicks on menu
     $("#mainNav a").click(function() {
@@ -73,7 +73,7 @@ $(function() {
         }
         if (activeClass == 'sell_price') {
             //calling hideNseekFunc that shows and hide modules
-            hideNseekFunc("sell-price-modul");
+            hideNseekFunc("selling-price-modul");
 
             /*
             Add your code here for module sell price
