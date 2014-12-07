@@ -79,9 +79,9 @@ td:nth-child(odd) {
 
 footer {
   margin-top:50px;
-  background-color:#EEE8CD;
+ /* background-color:#EEE8CD;
   border-top:1px solid #333;
-  color:#B8860B;
+  color:#B8860B;*/
   padding:20px;
 }
 
