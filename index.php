@@ -25,9 +25,9 @@
             <ul id="mainNav">
                 <li><a href="#" id="start" class="active">Start</a></li>
                 <li><a href="#" id="inleverans">Inleverans</a></li>
-                <li><a href="#" id="forsaljning">Försäljning</a></li>
+                <!--<li><a href="#" id="forsaljning">Försäljning</a></li>
                 <li><a href="#" id="report">Rapporter</a></li>
-                <li><a href="#" id="sell_price">Ändra försäljningspris</a></li>
+                <li><a href="#" id="sell_price">Ändra försäljningspris</a></li>-->
             </ul>
         </nav>
     </header>
@@ -46,7 +46,7 @@
         <?php include 'moduler/selling-price-modul.php'; ?>
     </div>
     <div id="report-modul" class="modul">
-        <?php include 'moduler/report-modul.php'; ?>
+        <?php include 'moduler/report-modul.php'; ?>-->
     </div>
 </main>
 
