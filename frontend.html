@@ -24,6 +24,9 @@
       document.getElementById("txtTips").innerHTML=xmlhttp.responseText;
     }
   }
+  xmlhttp.open("GET","getbook.php?q="+str,true);
+  xmlhttp.send();
+}
     </script>
   </body>
 
