@@ -14,6 +14,7 @@ if (isset($_POST['isbn'], $_POST['quantity'])) {
   	
 
 	$result = $dbh->jsonQuery("SELECT * FROM sales ORDER BY delivery_date DESC LIMIT 3");
+
 // Eka ut JSON:en till din AJAX-drivna webb:
 	//echo ($result);
 	echo json_encode($result);
