@@ -7,23 +7,25 @@
 
   <script>
   // Lets declare the function
-  function showBooks(str) {
+function showBooks(str) {
     // This is what the page will show when no book is selected
-    if (str=="") {
-  document.getElementById("txtTips").innerHTML="";
-  return;
-  }
-  if (window.XMLHttpRequest) {
-  xmlhttp=new XMLHttpRequest();
-}
-xmlhttp.onreadystatechange=function() {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-    document.getElementById("txtTips").innerHTML=xmlhttp.responseText;
-  }
-}
-// Pull data from getbook.php
-xmlhttp.open("GET","getbook.php?q="+str,true);
-xmlhttp.send();
+    if (str == "") {
+        document.getElementById("txtTips")
+            .innerHTML = "";
+        return;
+    }
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    }
+    xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtTips")
+                    .innerHTML = xmlhttp.responseText;
+            }
+        }
+        // Pull data from getbook.php
+    xmlhttp.open("GET", "getbook.php?q=" + str, true);
+    xmlhttp.send();
 }
   </script>
   </head>
