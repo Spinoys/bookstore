@@ -4,6 +4,8 @@
   <head>
   <title>The Bookstore - Group 3</title>
   <meta charset="UTF-8">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
   </head>
 
   <body>
@@ -18,12 +20,27 @@
     <th>Description</th>
    </tr>
   </thead>
-  <tbody id="BooksTable">
+  <tbody id="bookstable">
   </tbody>
  </table>
 
 <script type="text/javascript">
 $(document).ready(function(){
+  var url = 'getbook.php';
+      $.getJSON(url, function(data) {
+          $.each(data, function(index, data) {
+           $('#bookstable').append('<tr>');
+       $('#bookstable').append('<td>'+data.isbn+'</td>');
+       $('#bookstable').append('<td>'+data.current_stock+'</td>');
+       $('#bookstable').append('<td>'+data.author_first_name+'</td>');
+       $('#bookstable').append('<td>'+author_last_name+'</td>');
+       $('#bookstable').append('<td>'+description+'</td>');
+       $('#bookstable').append('</tr>');
+    });
+});
+               });
+            });
+
 </script>
   </body>
 
