@@ -46,7 +46,7 @@
         <?php include 'moduler/selling-price-modul.php'; ?>
     </div>
     <div id="report-modul" class="modul">
-        <?php include 'moduler/report-modul.php'; ?>-->
+        <?php include 'moduler/report-modul.php'; ?>
     </div>
 </main>
 
