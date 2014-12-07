@@ -59,7 +59,7 @@
 <!-- Module JS -->
 <script src="js/moduler/inleverans-modul.js"></script>
 <!-- Module JS -->
-
+<script src="js/moduler/forsaljning-modul.js"></script>
 <!-- Module JS -->
 <script src="js/moduler/selling-price-modul.js"></script>
 <!-- Module JS -->
