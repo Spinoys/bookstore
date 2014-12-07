@@ -4,42 +4,23 @@
   <head>
   <title>The Bookstore - Group 3</title>
   <meta charset="UTF-8">
-
-  <script>
-  // Lets declare the function
-function showBooks(str) {
-    // This is what the page will show when no book is selected
-    if (str == "") {
-        document.getElementById("txtTips")
-            .innerHTML = "";
-        return;
-    }
-    if (window.XMLHttpRequest) {
-        xmlhttp = new XMLHttpRequest();
-    }
-    xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                document.getElementById("txtTips")
-                    .innerHTML = xmlhttp.responseText;
-            }
-        }
-        // Pull data from getbook.php
-    xmlhttp.open("GET", "getbook.php?q=" + str, true);
-    xmlhttp.send();
-}
-  </script>
   </head>
 
   <body>
-    <!-- The form that will show the books -->
-    <form>
-<select name="books" onchange="showBooks(this.value)">
-<option value="">Select a book:</option>
-<option value="1">9100451924</option>
-</select>
-</form>
-<br>
-<div id="txtTips"><b>Välj en bok från listan.</b></div>
+    <table>
+  <caption>Books in Store</caption>
+  <thead>
+   <tr>
+    <th>ISBN</th>
+    <th>Current Stock</th>
+    <th>Author: First Name</th>
+    <th>Author: Last Name</th>
+    <th>Description</th>
+   </tr>
+  </thead>
+  <tbody id="BooksTable">
+  </tbody>
+ </table>
 
   </body>
 
