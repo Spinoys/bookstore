@@ -3,9 +3,9 @@
 include 'pdo_helper.php';
 
 //if we have a post
-if (isset($_POST['isbn'], $_POST['quantity'])) {
+if (isset($_POST['isbn'], $_POST['sales_quantity'])) {
 	$isbn = strip_tags($_POST['isbn']);
-	$quantity = strip_tags($_POST['quantity']);
+	$quantity = strip_tags($_POST['sales_quantity']);
 	
 	//book sold
 	//register sale

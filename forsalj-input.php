@@ -1,24 +1,46 @@
-<!DOCTYPE html>
-<html>
+<?php
+//Includes the magic connector!
+include 'pdo_helper.php';
 
-<head>
-    <meta charset="utf-8">
-    <title>Bookstore</title>
-    <meta name="description" content="Awesome bookstore">
-    <link rel="stylesheet" href="css/meyer-reset.css">
-    <!-- main.css-->
-    <link rel="stylesheet" href="css/main.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- jQuery fallback om jQuery inte kan laddas om google ligger nere eller är bannat i ett land kör vi jQuery från vår server måste vara i vanilla js! -->
-    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-    <!-- Main.js here-->
-    <!--<script src="js/main.js"></script>-->
-</head>
+//if we have a post
+if(isset($_POST['isbn'], $_POST['sales_quantity'])) {
+
+    $isbn = strip_tags($_POST['isbn']);
+    $sales_quantity = strip_tags($_POST['sales_quantity']);
 
 
-<body>
+        //check if book exists:
+    if(bookExists($dbh, $isbn)) {
+   
+        //add new quantity of sales
+        $dbh->query("INSERT INTO sales (isbn, sales_quantity, change_date)
+        VALUES('$isbn', '$sales_quantity', CURRENT_TIMESTAMP)");
+
+        $result = $dbh->jsonQuery("SELECT * FROM sales ORDER BY change_date DESC LIMIT 1");
+        // Eka ut JSON:en till din AJAX-drivna webb:
+        echo json_encode($result);
+    } else {
+        echo json_encode("Book doesn't exists!");
+    }
+} else {
+    echo json_encode('Something went wrong!');
+}
+
+function bookExists($dbh, $isbn) {
+    $result = $dbh->jsonQuery("SELECT isbn FROM book_item WHERE isbn='$isbn'");
+    $trimmed = trim($result, "[]");
+    if($trimmed === '' || strlen($trimmed) === 0 || empty($trimmed)) {
+        return false;
+    } else {
+        $resultArray = json_decode($result, true); 
+        $isbnFromArray = $resultArray[0]['isbn'];
+        if((string)$isbnFromArray === $isbn) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
 
 
-
-</body>
-</html>
+?>
