@@ -31,7 +31,13 @@ function showBooks(str) {
   </head>
 
   <body>
-
+    <!-- The form that will show the books -->
+    <form>
+<select name="books" onchange="showBooks(this.value)">
+<option value="">Select a book:</option>
+<option value="1">Harpan och Svärdet</option>
+</select>
+</form>
   </body>
 
 
