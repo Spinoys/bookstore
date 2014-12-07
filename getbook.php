@@ -25,13 +25,13 @@
    'isbn' => $row['isbn'],
    'current_stock' => $row['current_stock'],
     'author_first_name' => $row['author_first_name'],
-    'author_first_name' => $row['author_first_name'],
+    'author_last_name' => $row['author_last_name'],
     'description' => $row['description']
    );
   array_push($data, $row_data);
  }
 
   // Echo the results, send them back as JSON
-  
+
  echo json_encode($data);
 ?>
