@@ -1,7 +1,7 @@
 $("#search-result").hide();
 
 //report-modul ajax
-$('#report').submit(function(event) {
+$('#report-form').submit(function(event) {
 
     //Form data
     var formData = {
@@ -17,26 +17,40 @@ $('#report').submit(function(event) {
             //Getting data to console
             console.log(data);
             
-            //check what data is
-            //if...
+            $("#search-result").show();
+            
+            if(data !== "Book doesn't exists!" && data !== "Something went wrong!") {
 
-            //add rows to table from result data
-            //loop through result
-            $.each(data, function(val, book) {
+                //add rows to table from result data
+                //loop through result
+                $.each(data, function(val, book) {
                     //for every book
                     var tr = $("<tr></tr>");
                     $("#result-table").append(tr);
                     /*
-                    var td1 = $("<td>"+book.isbn+"</td>");
-                    tr.append(td1);
-                    var td2 = $("<td>"+book.title+"</td>");
-                    tr.append(td2);
-                    var td3 = $("<td>"+book.first_name+" "+book.last_name+"</td>");
-                    tr.append(td3);
+                    var tdIsbn = $("<td>"+book.isbn+"</td>");
+                    tr.append(tdIsbn);
+                    var tdTitle = $("<td>"+book.title+"</td>");
+                    tr.append(tdTitle);
+                    var tdPurchasePrice = $("<td>"+book.puchase_price+"</td>");
+                    tr.append(tdPurchasePrice);
+                    var tdSellingPrice = $("<td>"+book.selling_price+"</td>");
+                    tr.append(tdSellingPrice);
+                    var tdQuantitySold = $("<td>"+book.quantity_sold+"</td>");
+                    tr.append(tdQuantitySold);
+                    var tdPurchasePriceTotal = $("<td>"+book.purchase_price_total+</td>");
+                    tr.append(tdPurchasePriceTotal);
+                    var tdSellingPriceTotal = $("<td>"+book.selling_price_total+"</td>");
+                    tr.append(tdSellingPriceTotal);
+                    var tdProfit = $("<td>"+book.profit+"</td>");
+                    tr.append(tdProfit);
                     etc etc */
                     
                 }); //end of loop
-
+            } else {
+                var tr = $("<tr><td colspan='8'>Boken finns inte!</td></tr>");
+                $("#result-table").append(tr);
+            }
 
             //clear input fields
                 $('.form-input').find(':input').each(function() {
@@ -46,6 +60,7 @@ $('#report').submit(function(event) {
                             break;
                     }
                 });
+            
         },
         error: function(xhr, status, error) {
             //kunde inte hämta rapport
