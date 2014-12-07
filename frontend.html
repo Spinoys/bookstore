@@ -14,10 +14,12 @@
   <thead>
    <tr>
     <th>ISBN</th>
-    <th>Current Stock</th>
+    <th>Title</th>
     <th>Author: First Name</th>
     <th>Author: Last Name</th>
     <th>Description</th>
+    <th>Current Stock</th>
+    <th>Price</th>
    </tr>
   </thead>
   <tbody id="bookstable">
@@ -31,10 +33,12 @@ $(document).ready(function(){
           $.each(data, function(index, data) {
            $('#bookstable').append('<tr>');
        $('#bookstable').append('<td>'+data.isbn+'</td>');
-       $('#bookstable').append('<td>'+data.current_stock+'</td>');
+       $('#bookstable').append('<td>'+data.title+'</td>');
        $('#bookstable').append('<td>'+data.author_first_name+'</td>');
        $('#bookstable').append('<td>'+data.author_last_name+'</td>');
        $('#bookstable').append('<td>'+data.description+'</td>');
+       $('#bookstable').append('<td>'+data.current_stock+'</td>');
+       $('#bookstable').append('<td>'+data.price_with_vat+'</td>');
        $('#bookstable').append('</tr>');
     });
 });
