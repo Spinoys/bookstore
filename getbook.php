@@ -23,12 +23,12 @@
  while($row = mysql_fetch_array($result)){
   $row_data = array(
    'isbn' => $row['isbn'],
-   'current_stock' => $row['current_stock'],
-   'title' => $row['title'],
+      'title' => $row['title'],
     'author_first_name' => $row['author_first_name'],
     'author_last_name' => $row['author_last_name'],
-    'price_with_vat' => $row['price_with_vat'],
-    'description' => $row['description']
+        'description' => $row['description'],
+    'current_stock' => $row['current_stock'],
+    'price_with_vat' => $row['price_with_vat']
    );
   array_push($data, $row_data);
  }
