@@ -51,7 +51,7 @@
 </main>
 
 <footer>
-    <p>FooterInfo</p>
+
 </footer>
 <!-- App ends-->
 
