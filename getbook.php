@@ -13,7 +13,7 @@
 
 // Select all from correct table
 
- $sql = 'SELECT * FROM current_stock_extended';
+ $sql = 'SELECT * FROM current_stock_extended_and_present_prices_vid_vat';
 
  $result = mysql_query($sql,$conn);
 
@@ -24,6 +24,7 @@
   $row_data = array(
    'isbn' => $row['isbn'],
    'current_stock' => $row['current_stock'],
+   'title' => $row['title'],
     'author_first_name' => $row['author_first_name'],
     'author_last_name' => $row['author_last_name'],
     'description' => $row['description']
