@@ -12,7 +12,7 @@
              $("#forsaljning_resultat_ajax").show().html('<img src="img/ajaxsnurra.gif">Laddar...');
                 },
             type        : 'POST',
-            url         : 'forsalj-input.php',
+            url         : 'forsaljning.php',
             data        : formData, // our data object
             dataType    : 'json',
             success: function(data){

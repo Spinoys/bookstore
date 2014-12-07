@@ -1,5 +1,5 @@
     <h3>Försäljningsformulär</h3>
-        <form id="sales" method="post" action="forsalj-input.php">
+        <form id="sales" method="post" action="forsaljning.php">
             <div class="form-input">
             <label for="isbn">ISBN:</label>
             <input id="isbn" name="isbn" type="text" placeholder="ISBN-nummer" maxlength=13 required>
