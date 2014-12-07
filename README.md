@@ -8,6 +8,7 @@ Theo
 Anna
 Ömur
 Magnus
+Johanna
 
 2014-12-01:
 Kunden vill att personalen vid inleverans direkt ska kunna mata in isbn, inköpspris, leveransdatum, antal levererade ex samt hyllplats
