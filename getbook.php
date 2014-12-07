@@ -1,8 +1,10 @@
 <?php
+
  $conn = mysql_connect('localhost','root','mysql');
  if(!$conn){
   die('Mysql connection error '.mysql_error());
  }
+
 
 // Connect to the correct database
 
@@ -11,11 +13,15 @@
   die('Database selection failed '.mysql_error());
  }
 
+// Support for Swedish Letters
+ mysql_query("SET NAMES utf8");
+
 // Select all from correct table
 
  $sql = 'SELECT * FROM current_stock_extended_and_present_prices_with_vat';
 
  $result = mysql_query($sql,$conn);
+
 
  // Fetch the data from table
 
@@ -36,4 +42,5 @@
   // Echo the results, send them back as JSON
 
  echo json_encode($data);
+
 ?>
